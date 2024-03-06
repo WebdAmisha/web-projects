@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <style>
+        *{
+            margin:0px;
+            padding: 0px;
+            box-sizing: border-box;
+        }
+        .container{
+            width:1350px;
+            margin: 0px auto;
+        }
+        nav{
+            background-color: azure;
+            display: flex;
+        }
+        .logo{
+            padding-left: 15%;
+            line-height: 70px;
+            font-size: 30px;
+            text-decoration: none;
+            letter-spacing: 3px;
+            color: black;
+        }
+        nav ul{
+           display: flex;
+           margin-left: auto;
+        }
+        nav ul li{
+           list-style-type: none;
+           padding:20px;
+           line-height:50px;
+        }
+        nav ul li a{
+           text-decoration: none;
+           color: black;
+        }
+        nav ul li a:hover{
+            color:#1abc9c;
+        }
+        #who_section{
+            background-color: #1abc9c;
+        }
+        .heading{
+            padding-top:5%;
+            text-align: center;
+            padding-bottom: 2%;
+            color: white;
+            font-weight: lighter;
+            font-size: 25px;
+        }
+        .who_content{
+            padding-top: 3%;
+            text-align: center;
+            padding-bottom:5%;
+            color: white;
+            font-weight: lighter;
+            font-size:30px;
+        }
+        #who_img{
+            width:350px;
+            height:350px;
+            border-radius:50%;
+        }
+        #what_section{
+            background-color: #474e5d;
+        }
+        .what_content{
+            text-align: center;
+            color: white;
+            font-size: 18px;
+            padding:20px 10px;
+            font-weight: lighter;
+        }
+        .align-center{
+            text-align: center;
+        }
+        .search_btn{
+            padding: 10px 20px;
+            border-radius:10px;
+            margin-bottom:3%;
+        }
+        #where_section{
+            background-color: azure;
+        }
+        #head_color{
+            color:black
+        }
+        .where_content{
+            display: flex;
+            justify-content: space-evenly;
+        }
+        .where_box{
+            width:30%;
+            height:500px;
+            border: 0px solid;
+            margin-bottom:50px;
+            margin-top:50px;
+        }
+        .where_para{
+            padding :10px;
+            text-align: center;
+            line-height:25px;
+        }
+        .where_img{
+            width:401px;
+            height:400px;
+        }
+        #footer{
+            background-color: #2f2f2f;
+        }
+        .footer_content{
+            text-align: center;
+            color: white;
+            padding-top: 40px;
+            padding-bottom: 40px;
+            font-size: larger;
+        }
+    </style>
+</head>
+<body>
+    <!-- Navigation Bar -->
+     <nav>
+        <a href="" class="logo">Me</a>
+        <ul>
+            <li><a href="">WHO</a></li>
+            <li><a href="">WHAT</a></li>
+            <li><a href="">WHERE</a></li>
+        </ul>
+     </nav>
+     <!-- who Section -->
+     <section id="who_section">
+        <div class="container">
+            <h1 class="heading">WHO AM I ?</h1>
+            <center><img src="images/eagle.jpg" alt="load image" id="who_img"/></center>
+            <p class="who_content">I'm an adventurer</p>
+        </div>
+     </section>
+     <!-- what Section -->
+     <section id="what_section">
+        <div class="container">
+             <h1 class="heading">What Am I?</h1>
+             <p class="what_content">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut 
+                labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris 
+                nisi ut aliquip ex ea commodo consequat. </p>
+              <div class=" align-center">
+                <input type="submit" value="Search" class="search_btn" />
+              </div>  
+        </div>
+     </section>
+     <!-- where section -->
+     <section id="where_section">
+        <div class="container">
+            <h1 class="heading" id="head_color">Where To Find Me?</h1>
+            <div class="where_content">
+                <div class="where_box">
+                    <p class="where_para">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut
+                         labore et dolore magna aliqua.</p>
+                         <img src="images/birds1.jpg" alt="load image" class="where_img"/>
+                </div>
+                <div class="where_box">
+                    <p class="where_para">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut
+                        labore et dolore magna aliqua.</p>
+                        <img src="images/birds2.jpeg" alt="load image" class="where_img"/>
+                </div>
+                <div class="where_box">
+                    <p class="where_para">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut
+                        labore et dolore magna aliqua.</p>
+                        <img src="images/birds3.jpg" alt="load image" class="where_img"/>
+                </div>
+            </div>
+        </div>
+     </section>
+     <!-- Footer -->
+     <footer id="footer">
+        <div class="container">
+               <p class="footer_content">Bootstrap Theme Made By: <a href="" style="color:lightblue">Amisha Karara</a></p>
+        </div>
+     </footer>
+</body>
+</html>
